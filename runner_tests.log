@@ -1,0 +1,20 @@
+2024-12-23 19:02:28,497 | INFO | "test_run" выполнен успешно
+2024-12-23 19:02:28,497 | WARNING | Неверный тип данных для объекта Runner
+2024-12-23 19:02:28,497 | ERROR | Ошибка
+Traceback (most recent call last):
+  File "/Users/viktorlevin/PycharmProjects/pythonProject2/12/tests_12_4.py", line 26, in test_run
+    r2 = rt.Runner(('Den', 5), 20)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/viktorlevin/PycharmProjects/pythonProject2/12/rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано tuple
+2024-12-23 19:02:28,498 | INFO | "test_walk" выполнен успешно
+2024-12-23 19:02:28,498 | WARNING | Неверная скорость для Runner
+2024-12-23 19:02:28,498 | ERROR | Ошибка
+Traceback (most recent call last):
+  File "/Users/viktorlevin/PycharmProjects/pythonProject2/12/tests_12_4.py", line 15, in test_walk
+    r1 = rt.Runner('Name', -7)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/viktorlevin/PycharmProjects/pythonProject2/12/rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -7
